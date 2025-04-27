@@ -8,7 +8,7 @@ import Link from "next/link";
 const fetchPosts = async () => {
   try {
     const postJson = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/posts?page=1&limit=6`
+      `${process.env.NEXT_PUBLIC_API_URL}/posts?page=1&limit=6`,
     );
 
     const posts = (await postJson?.json?.()) as PostResponse;
