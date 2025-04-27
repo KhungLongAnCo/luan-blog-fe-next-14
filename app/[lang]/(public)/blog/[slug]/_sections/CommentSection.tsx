@@ -67,6 +67,7 @@ export default function CommentSection({ postId }: { postId: string }) {
       toast({
         description: "Your message has been sent.",
         color: "success",
+
         style: { background: "green", color: "white" },
       });
       reset();
@@ -189,10 +190,10 @@ export default function CommentSection({ postId }: { postId: string }) {
             <Button type="submit" disabled={isSubmitting}>
               {isSubmitting ? "Đã gửi" : "Gửi bình luận"}
             </Button>
-            <Toaster />
           </div>
         </form>
       </div>
+      <Toaster />
     </div>
   );
 }

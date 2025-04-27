@@ -37,7 +37,7 @@ export class Api {
     // if (token)
     //   this.caller.defaults.headers.common.Authorization = `Bearer ${token}`;
     // - Config
-    this.caller.defaults.baseURL = process.env.API_URL;
+    this.caller.defaults.baseURL = process.env.NEXT_PUBLIC_API_URL;
     this.caller.defaults.timeout = 1000 * 60 * 5;
 
     // Response interceptor for API calls
