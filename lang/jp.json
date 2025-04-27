@@ -1,0 +1,74 @@
+{
+  "login": "Login",
+  "username": "Username",
+  "password": "Password",
+  "remember_me": "Remember me",
+  "forgot_password": "Forgot password",
+  "sign_in": "Sign in",
+  "sign_up": "Sign up",
+  "or": "Or",
+  "title": "Title",
+  "content": "Content",
+  "register_now": "sign up now!",
+  "your_name": "Your Name",
+  "your_email": "Your Email",
+  "your_password": "Your Password",
+  "re_enter_password": "Re-Enter Password",
+  "create_account": "Create Account",
+  "email": "Email",
+  "reset": "Reset",
+  "back_home": "Back Home",
+  "notice": "Notice",
+  "unknow_error": "Unknow error",
+  "message": {
+    "introduction": "AI powered personalization engine dedicated to understanding human tastes"
+  },
+  "validate": {
+    "confirm_privacy_policy": "Please confirm that you have read privacy policy."
+  },
+  "AuthLayout": {
+    "login": "Login",
+    "register": "Register",
+    "forgot_password": "Forgot Password",
+    "sign_in": "Sign In",
+    "sign_up": "Sign Up",
+    "reset_password": "Reset Password",
+    "verify_email": "Verify Email"
+  },
+  "LocaleLayout": {
+    "title": "Code Vista | Agentic Coding Assistant",
+    "description": "Code Vista your AI journey Putting AI into greater business & Discover the untapped opportunities We strive to deliver the best-in-class performance to our clients by developing AI solutions & services that optimize operations, unlock the value of data, empower employees and promote innovation. More About Us PRODUCT VisionAI End-to-end MLOps platform to deploy AI visual inspection …"
+  },
+  "IvyChatLayout": {
+    "title": "Ivy Chat"
+  },
+  "PublicationLayout": {
+    "title": "Publication by AIC"
+  },
+  "AiProjectByFptLayout": {
+    "title": "AI Project By FPT"
+  },
+  "DocifyAILayout": {
+    "title": "Docify AI"
+  },
+  "DataScienceLayout": {
+    "title": "Data Science"
+  },
+  "ServicesLayout": {
+    "title": "Services"
+  },
+  "TechBlogLayout": {
+    "title": "Tech Blog"
+  },
+  "AIDayLayout": {
+    "title": "AI Day 2024"
+  },
+  "NewLayout": {
+    "title": "News"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "back_home": "Back Home"
+  }
+}

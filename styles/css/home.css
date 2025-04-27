@@ -1,0 +1,126 @@
+.home-intro-section {
+  background-image: url(/assets/pngs/home-bg.png);
+  background-blend-mode: exclusion;
+  background-position: center;
+  background-repeat: no-repeat;
+  .home-intro-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  .social-icons {
+    img {
+      filter: grayscale(1);
+      &:hover {
+        cursor: pointer;
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+.wrap-slogans {
+  background-image: url(/assets/pngs/trong-dong.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 364px 364px;
+  background-blend-mode: exclusion;
+  position: relative;
+  width: 364px;
+  height: 364px;
+  border-radius: 50%;
+  transition: 0.5s;
+  transform-origin: center center;
+}
+.wrap-slogans::before {
+  /* content: ""; */
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  /* background: #000;
+  border-radius: 50% 0 0 50%; */
+}
+
+.item-carousel {
+  position: absolute;
+  border-radius: 50%;
+
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin: 2px;
+  bottom: 0;
+  transition: 0.5s;
+  white-space: pre;
+  text-align: left;
+  opacity: 0;
+  .slogan-text {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    min-width: 500px;
+    text-align: center;
+    transition: color 0.1s ease-in-out;
+  }
+  &.next {
+    opacity: 0.5;
+  }
+  &.prev {
+    opacity: 0.5;
+  }
+
+  &.active {
+    opacity: 1;
+  }
+
+  &:nth-child(1) {
+    right: -19px;
+    top: 101px;
+  }
+  &:nth-child(2) {
+    right: -17px;
+    top: 213px;
+  }
+  &:nth-child(3) {
+    right: 49px;
+    top: 303px;
+  }
+  &:nth-child(4) {
+    right: 156px;
+    top: 337px;
+  }
+  &:nth-child(5) {
+    right: 263px;
+    top: 302px;
+  }
+  &:nth-child(6) {
+    right: 330px;
+    top: 210px;
+  }
+  &:nth-child(7) {
+    right: 330px;
+    top: 100px;
+  }
+  &:nth-child(8) {
+    right: 263px;
+    top: 7px;
+  }
+  &:nth-child(9) {
+    right: 156px;
+    top: -27px;
+  }
+  &:nth-child(10) {
+    right: 48px;
+    top: 6px;
+  }
+}

@@ -1,0 +1,18 @@
+export const fontSize = {
+  heading1: 60,
+  heading2: 48,
+  heading3: 36,
+  heading4: 30,
+  heading5: 24,
+  heading6: 20,
+  body: 16,
+  caption: 14,
+  small: 12,
+  tiny: 10,
+  xs: 12,
+  sm: 14,
+  base: 16,
+  md: 16,
+  lg: 18,
+  xl: 24,
+};

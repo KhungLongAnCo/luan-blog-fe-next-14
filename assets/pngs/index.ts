@@ -1,0 +1,9 @@
+export { default as emailPng } from "./email.png";
+export { default as githubPng } from "./github.png";
+export { default as facePng } from "./facebook.png";
+export { default as linkinPng } from "./linkin.png";
+export { default as youtubePng } from "./youtube.png";
+export { default as igPng } from "./ig.png";
+export { default as logoPng } from "./logo.png";
+export { default as trongdongPng } from "./trong-dong.png";
+export { default as blurImgPng } from "./blur-img.png";
