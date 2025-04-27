@@ -4,7 +4,6 @@ import { PostResponse } from "@/model/post";
 import { getImagePath } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
-import Error from "../error";
 
 const fetchPosts = async () => {
   try {
@@ -24,10 +23,6 @@ const fetchPosts = async () => {
 
 export const BlogsSection = async () => {
   const posts = await fetchPosts();
-
-  if (!posts) {
-    return Error;
-  }
 
   return (
     <div

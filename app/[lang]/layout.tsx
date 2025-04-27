@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "BLOG CỦA LUAN (LEVI) | LẬP TRÌNH VIÊN",
   description:
     "Chào bạn, tôi là Luan (Levi) – một Lập Trình Viên Full-Stack với hơn 5 năm kinh nghiệm, chuyên về Front-End Development từ năm 2019. Đây là nơi tôi chia sẻ kiến thức lập trình và nhận các dự án freelancer.",
-  // metadataBase: new URL(`${process.env.NEXT_PUBLIC_DOMAIN}`),
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_DOMAIN}`),
 };
 
 const geistSans = localFont({
