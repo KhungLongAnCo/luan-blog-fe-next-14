@@ -14,7 +14,7 @@ export const IntroSection = () => {
       className="home-intro-section relative min-h-[100vh] bg-gray600 overflow-hidden px-4 py-8 md:py-16"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-[20vh] md:mt-[20vh]">
-        <div className="backdrop:blur-lg z-50">
+        <div className="backdrop:blur-lg z-50 mt-[100px]">
           <div className="md:pl-[64px]">
             <TypingAnimation
               as="h1"

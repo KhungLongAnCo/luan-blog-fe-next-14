@@ -3,6 +3,8 @@ select,
 textarea {
   border: solid 1px var(--input);
   border-radius: 8px;
-  color: var(--input);
+  &&& {
+    color: var(--input);
+  }
   /* } */
 }

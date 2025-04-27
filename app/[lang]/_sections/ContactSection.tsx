@@ -1,7 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Toaster } from "@/components/ui/toaster";
 import { CONTACT } from "@/defines";
+import { toast } from "@/hooks/use-toast";
 import { usePostContact } from "@/hooks/usePostContact";
 import { ContactBodyDto } from "@/model";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -45,7 +47,12 @@ export default function ContactSection() {
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     await handlePostContact(data);
+    toast({
+      description: "Your requirement has been sent.",
+      color: "success",
 
+      style: { background: "green", color: "white" },
+    });
     setIsSuccess(true);
     reset();
     setTimeout(() => setIsSuccess(false), 3000);
@@ -248,6 +255,7 @@ export default function ContactSection() {
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }
