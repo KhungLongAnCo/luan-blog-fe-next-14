@@ -51,7 +51,7 @@ export const BlogsSection = async () => {
               <Image
                 src={getImagePath(post?.thumbnail)}
                 alt="card image"
-                className="mb-3 w-full h-[250px] object-cover card-img"
+                className="mb-3 w-full h-[250px] object-contain card-img "
                 width={300}
                 placeholder="blur"
                 blurDataURL={blurImgBase64}
@@ -63,7 +63,7 @@ export const BlogsSection = async () => {
                     <Button
                       variant="outline"
                       key={tag?._id}
-                      className="line-clamp-1"
+                      className="line-clamp-1 font-bold"
                     >
                       {tag?.name}
                     </Button>

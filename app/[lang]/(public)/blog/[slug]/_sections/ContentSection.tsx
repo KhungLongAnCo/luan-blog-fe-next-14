@@ -40,13 +40,15 @@ export const ContentSection = ({ post }: { post: PostModel }) => {
           >
             {post?.tags?.map((tag) => (
               <motion.span key={tag?._id} {...moveLeft}>
-                <Button variant="secondary" className="bg-green-300">
+                <Button variant="secondary" className="bg-green-300 font-bold">
                   {tag?.name}
                 </Button>
               </motion.span>
             ))}
 
-            <Button variant="secondary">{formatDate(post?.createdAt)}</Button>
+            <Button variant="secondary" className="font-bold">
+              {formatDate(post?.createdAt)}
+            </Button>
           </motion.div>
         </div>
         <div className="blog-content">

@@ -98,6 +98,7 @@
 
   .card-img {
     border-radius: 8px 8px 0px 0px;
+    background-color: var(--foreground);
   }
   .card-content {
     @apply p-4;
@@ -195,6 +196,16 @@ body {
     &:last-child {
       @apply mb-0;
     }
+  }
+  pre {
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+  .ql-syntax {
+    overflow: auto;
+    @apply bg-gray p-4;
+    scrollbar-width: thin;
+    border-radius: 8px;
   }
 }
 
