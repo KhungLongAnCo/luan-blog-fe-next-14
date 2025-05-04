@@ -1,4 +1,4 @@
-export const getImagePath = (endpoint: string) => {
+export const getImagePath = (endpoint?: string) => {
   if (endpoint?.includes("http")) {
     return endpoint;
   }

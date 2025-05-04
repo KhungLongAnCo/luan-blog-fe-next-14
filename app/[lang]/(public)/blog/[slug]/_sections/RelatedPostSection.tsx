@@ -1,9 +1,7 @@
 "use client";
+import { PostCard } from "@/components/ui/PostCard";
 import { PostModel } from "@/model/post";
-import { getImagePath } from "@/utils";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const getRelatedPostsRequest = (slug: string, limit: number = 4) => {
@@ -39,28 +37,11 @@ export const RelatedPostSection = ({ slug }: { slug: string }) => {
       <div className="mt-12 px-8 md:px-[64px]">
         <h2 className="text-2xl font-bold mb-6">Bài viết liên quan</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {relatedPosts.map((relatedPost) => (
-            <Link
-              href={`/blog/${relatedPost.slug}`}
-              key={relatedPost._id}
-              className="card-gradient overflow-hidden hover:text-primary "
-            >
-              {relatedPost.thumbnail && (
-                <Image
-                  src={getImagePath(relatedPost.thumbnail)}
-                  alt={relatedPost.title}
-                  className="w-full h-[300px] object-cover"
-                  width={300}
-                  height={300}
-                />
-              )}
-              <div className="p-4">
-                <h3 className="font-semibold mb-2">{relatedPost.title}</h3>
-                <p className="text-sm text-gray-600 line-clamp-2">
-                  {relatedPost.description}
-                </p>
-              </div>
-            </Link>
+          {relatedPosts.map((relatedPost, index) => (
+            <PostCard
+              post={relatedPost}
+              key={`${relatedPost?.title}-${index}`}
+            />
           ))}
         </div>
       </div>

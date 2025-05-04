@@ -1,8 +1,6 @@
-import { blurImgBase64 } from "@/assets";
 import { Button } from "@/components/ui/button";
+import { PostCard } from "@/components/ui/PostCard";
 import { PostResponse } from "@/model/post";
-import { getImagePath } from "@/utils";
-import Image from "next/image";
 import Link from "next/link";
 
 const fetchPosts = async () => {
@@ -43,36 +41,7 @@ export const BlogsSection = async () => {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {posts?.data?.map((post, index) => (
-            <Link
-              href={`/blog/${post?.slug}`}
-              className="card"
-              key={`${post?.title}-${index}`}
-            >
-              <Image
-                src={getImagePath(post?.thumbnail)}
-                alt="card image"
-                className="mb-3 w-full h-[250px] object-contain card-img "
-                width={300}
-                placeholder="blur"
-                blurDataURL={blurImgBase64}
-                height={250}
-              />
-              <div className="card-content">
-                <div className="flex items-end gap-2 mb-3">
-                  {post?.tags?.slice(0, 3)?.map((tag) => (
-                    <Button
-                      variant="outline"
-                      key={tag?._id}
-                      className="line-clamp-1 font-bold"
-                    >
-                      {tag?.name}
-                    </Button>
-                  ))}
-                </div>
-                <h4 className="mb-3 flex-gro line-clamp-2">{post?.title}</h4>
-                <p className="line-clamp-4">{post?.description}</p>
-              </div>
-            </Link>
+            <PostCard post={post} key={`${post?.title}-${index}`} />
           ))}
         </div>
         <div className="flex justify-center mt-6">
