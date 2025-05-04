@@ -104,6 +104,7 @@
   }
   .card-content {
     @apply p-4 flex flex-col h-full;
+    color: var(--foreground);
     .card-comments {
       @apply flex items-center justify-between w-full;
       @apply text-gray;

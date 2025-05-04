@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
 import { Metadata } from "next";
+import Head from "next/head";
 
 import { Navbar, Content, Footer } from "./_components";
 
@@ -40,6 +41,13 @@ export default async function LocaleLayout({
 
   return (
     <html lang={lang} className="mdl-js">
+      <Head>
+        <link
+          rel="canonical"
+          href={process.env.NEXT_PUBLIC_DOMAIN}
+          key="canonical"
+        />
+      </Head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />

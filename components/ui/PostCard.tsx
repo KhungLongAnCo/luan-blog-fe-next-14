@@ -36,7 +36,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post }) => {
         <div className="flex-grow">
           <p className="line-clamp-4">{post?.description}</p>
         </div>
-        <div className="card-comments">
+        <div className="card-comments flex items-center justify-between w-full">
           <div className="flex items-center mr-3">
             <span className="mr-1">0</span> <EyeSvg className="w-[20px]" />
           </div>
